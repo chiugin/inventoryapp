@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/addItemDrawer"
+        android:title="Add item" />
+    <item
+        android:id="@+id/clearFieldDrawer"
+        android:title="Clear fields" />
+    <item
+        android:id="@+id/listItemDrawer"
+        android:title="List all items" />
+</menu>

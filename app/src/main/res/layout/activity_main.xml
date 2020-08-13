@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/activityConstraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/ItemName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="80dp"
+            android:text="Item Name"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/ItemNameText"
+            style="@style/Widget.AppCompat.AutoCompleteTextView"
+            android:layout_width="258dp"
+            android:layout_height="39dp"
+            android:layout_marginStart="32dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ItemName" />
+
+        <TextView
+            android:id="@+id/Quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:text="Quantity"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ItemNameText" />
+
+        <EditText
+            android:id="@+id/QuantityText"
+            android:layout_width="258dp"
+            android:layout_height="39dp"
+            android:layout_marginStart="32dp"
+            android:ems="10"
+            android:inputType="number|numberDecimal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Quantity" />
+
+        <TextView
+            android:id="@+id/Cost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:text="Cost"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/QuantityText" />
+
+        <EditText
+            android:id="@+id/CostText"
+            android:layout_width="258dp"
+            android:layout_height="39dp"
+            android:layout_marginStart="32dp"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Cost" />
+
+        <TextView
+            android:id="@+id/Description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:text="Desription"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/CostText" />
+
+        <EditText
+            android:id="@+id/DescriptionText"
+            android:layout_width="0dp"
+            android:layout_height="78dp"
+            android:layout_marginStart="32dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:singleLine="false"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Description" />
+
+        <TextView
+            android:id="@+id/Frozen"
+            android:layout_width="258dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:text="Frozen Item?"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/DescriptionText" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:textOff="NO"
+            android:textOn="YES"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Frozen" />
+
+        <Button
+            android:id="@+id/addItemDrawer"
+            android:layout_width="140dp"
+            android:layout_height="51dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:onClick="addItem"
+            android:text="Add new item"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toggleButton" />
+
+        <Button
+            android:id="@+id/clearFieldDrawer"
+            android:layout_width="140dp"
+            android:layout_height="51dp"
+            android:layout_marginStart="8dp"
+            android:onClick="clearField"
+            android:text="Clear all items"
+            app:layout_constraintBaseline_toBaselineOf="@+id/addItemDrawer"
+            app:layout_constraintStart_toEndOf="@+id/addItemDrawer" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

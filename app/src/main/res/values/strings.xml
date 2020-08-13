@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Warehouse Inventory App</string>
+    <string name="navigation_drawer_open">drawer is now open</string>
+    <string name="navigation_drawer_close">drawer is now closed</string>
+</resources>

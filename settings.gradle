@@ -1,0 +1,2 @@
+rootProject.name='FIT2081 Lab 3'
+include ':app'
